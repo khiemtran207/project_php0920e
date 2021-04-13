@@ -1,0 +1,26 @@
+@-webkit-keyframes passing { 0% { -webkit-transform: translateX(-50%); transform: translateX(-50%); opacity: 0; }
+  50% { -webkit-transform: translateX(0%); transform: translateX(0%); opacity: 1; }
+  100% { -webkit-transform: translateX(50%); transform: translateX(50%); opacity: 0; } }
+
+@keyframes passing { 0% { -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); opacity: 0; }
+  50% { -webkit-transform: translateX(0%); -ms-transform: translateX(0%); transform: translateX(0%); opacity: 1; }
+  100% { -webkit-transform: translateX(50%); -ms-transform: translateX(50%); transform: translateX(50%); opacity: 0; } }
+
+@-webkit-keyframes passingY { 0% { -webkit-transform: translateY(-50%); transform: translateY(-50%); opacity: 0; }
+  50% { -webkit-transform: translateY(0%); transform: translateY(0%); opacity: 1; }
+  100% { -webkit-transform: translateY(50%); transform: translateY(50%); opacity: 0; } }
+
+@keyframes passingY { 0% { -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); opacity: 0; }
+  50% { -webkit-transform: translateY(0%); -ms-transform: translateY(0%); transform: translateY(0%); opacity: 1; }
+  100% { -webkit-transform: translateY(50%); -ms-transform: translateY(50%); transform: translateY(50%); opacity: 0; } }
+
+.oneline, .userinfo_top .toogle_content li a, .userinfo_top .toogle_content li span { display: block; word-wrap: break-word; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+
+.userinfo_top { float: left; position: relative; }
+@media (min-width: 1200px) { .userinfo_top { float: right; } }
+.userinfo_top .current { position: relative; color: #3f3f3f; overflow: hidden; line-height: 85px; font-size: 18px; cursor: pointer; padding: 0 1px; }
+.userinfo_top .current.active { color: #c2a476; }
+.userinfo_top .toogle_content { display: none; position: absolute; top: 85px; right: 0; width: 260px; padding: 10px 0; background: #3f3f3f; }
+.userinfo_top .toogle_content li { padding: 0 30px; }
+.userinfo_top .toogle_content li a, .userinfo_top .toogle_content li span { text-align: right; line-height: 38px; color: white; text-transform: uppercase; font-weight: 700; font-size: 12px; }
+.userinfo_top .toogle_content li a:hover, .userinfo_top .toogle_content li span:hover { color: #c2a476; }

@@ -1,0 +1,59 @@
+@-webkit-keyframes passing { 0% { -webkit-transform: translateX(-50%); transform: translateX(-50%); opacity: 0; }
+  50% { -webkit-transform: translateX(0%); transform: translateX(0%); opacity: 1; }
+  100% { -webkit-transform: translateX(50%); transform: translateX(50%); opacity: 0; } }
+
+@keyframes passing { 0% { -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); opacity: 0; }
+  50% { -webkit-transform: translateX(0%); -ms-transform: translateX(0%); transform: translateX(0%); opacity: 1; }
+  100% { -webkit-transform: translateX(50%); -ms-transform: translateX(50%); transform: translateX(50%); opacity: 0; } }
+
+@-webkit-keyframes passingY { 0% { -webkit-transform: translateY(-50%); transform: translateY(-50%); opacity: 0; }
+  50% { -webkit-transform: translateY(0%); transform: translateY(0%); opacity: 1; }
+  100% { -webkit-transform: translateY(50%); transform: translateY(50%); opacity: 0; } }
+
+@keyframes passingY { 0% { -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); opacity: 0; }
+  50% { -webkit-transform: translateY(0%); -ms-transform: translateY(0%); transform: translateY(0%); opacity: 1; }
+  100% { -webkit-transform: translateY(50%); -ms-transform: translateY(50%); transform: translateY(50%); opacity: 0; } }
+
+.oneline, .pos-slideshow-info .content span { display: block; word-wrap: break-word; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+
+.nivoSlider { position: relative; width: 100%; height: auto; overflow: hidden; /* If an image is wrapped in a link */ }
+.nivoSlider img { position: absolute; top: 0px; left: 0px; max-width: none; }
+.nivoSlider a.nivo-imageLink { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; z-index: 6; display: none; background: #fff; }
+
+.nivo-main-image { display: block !important; position: relative !important; width: 100% !important; }
+
+/* The slices and boxes in the Slider */
+.nivo-slice { display: block; position: absolute; z-index: 5; height: 100%; top: 0; }
+
+.nivo-box { display: block; position: absolute; z-index: 5; overflow: hidden; }
+.nivo-box img { display: block; }
+
+/* Caption styles */
+.nivo-caption { display: none; }
+
+.nivo-html-caption { display: none; }
+
+/* slideshow edit */
+.slideshow_container .pos-slideshow { position: relative; }
+.slideshow_container .pos-slideshow .nivo-directionNav a { display: block; width: 40px; height: 40px; line-height: 36px; border: 2px solid white; color: white; text-align: center; font-size: 21px; position: absolute; z-index: 9; cursor: pointer; top: 45%; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
+@media (max-width: 640px) { .slideshow_container .pos-slideshow .nivo-directionNav a { display: none; } }
+.slideshow_container .pos-slideshow .nivo-directionNav a.nivo-prevNav { left: 10px; }
+.slideshow_container .pos-slideshow .nivo-directionNav a.nivo-nextNav { right: 10px; }
+.slideshow_container .pos-slideshow .nivo-directionNav a:hover { background: #c2a476; }
+.slideshow_container .pos-slideshow .nivo-controlNav { position: absolute; bottom: 15px; left: 0; width: 100%; text-align: center; z-index: 10; }
+.slideshow_container .pos-slideshow .nivo-controlNav a { display: inline-block; margin: 0 3.5px; cursor: pointer; font-size: 0; width: 11px; height: 11px; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; border-radius: 100%; background: white; }
+.slideshow_container .pos-slideshow .nivo-controlNav a.active { background: #3f3f3f; }
+.slideshow_container .pos-slideshow .pos-slideshow-readmore { position: absolute; z-index: 11; bottom: 8vw; left: 0; width: 100%; text-align: left; }
+.slideshow_container .pos-slideshow .pos-slideshow-readmore a { display: inline-block; border: 2px solid white; color: white; text-transform: uppercase; padding: 0 25px; line-height: 42px; font-size: 14px; font-weight: 700; -webkit-animation: fadeInUp 500ms ease-out; -moz-animation: fadeInUp 500ms ease-out; -ms-animation: fadeInUp 500ms ease-out; -o-animation: fadeInUp 500ms ease-out; animation: fadeInUp 500ms ease-out; }
+.slideshow_container .pos-slideshow .pos-slideshow-readmore a:hover { border-color: #c2a476; background: #c2a476; color: white; }
+
+.pos-slideshow-info { position: absolute; bottom: 0; left: 0; width: 100%; z-index: 10; }
+@media (max-width: 991px) { .pos-slideshow-info { display: none; } }
+.pos-slideshow-info .content { text-align: left; margin-bottom: 12vw; }
+.pos-slideshow-info .content span.txt1 { color: white; font-size: 3vw; font-weight: 700; line-height: 3.5vw; -webkit-animation: fadeInRight 500ms ease-out; -moz-animation: fadeInRight 500ms ease-out; -ms-animation: fadeInRight 500ms ease-out; -o-animation: fadeInRight 500ms ease-out; animation: fadeInRight 500ms ease-out; }
+.pos-slideshow-info .content span.txt2 { color: white; font-weight: 700; font-size: 6vw; line-height: 6.5vw; -webkit-animation: fadeInRight 1000ms ease-out; -moz-animation: fadeInRight 1000ms ease-out; -ms-animation: fadeInRight 1000ms ease-out; -o-animation: fadeInRight 1000ms ease-out; animation: fadeInRight 1000ms ease-out; }
+.pos-slideshow-info .content span.txt3 { margin-top: 1vw; color: white; font-size: 2.5vw; line-height: 3vw; font-family: 'Vidaloka', serif; -webkit-animation: fadeInRight 1500ms ease-out; -moz-animation: fadeInRight 1500ms ease-out; -ms-animation: fadeInRight 1500ms ease-out; -o-animation: fadeInRight 1500ms ease-out; animation: fadeInRight 1500ms ease-out; }
+@media (max-width: 767px) { .pos-slideshow-info .content span { display: none; } }
+
+.nivo-caption { position: absolute; bottom: 0; left: 0; width: 100%; }
+.nivo-caption .container { position: relative; }

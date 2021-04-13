@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule trang-chu.html index.php?controller=home
+RewriteRule danh-sach-san-pham.html index.php?controller=product&action=showall
+RewriteRule gio-hang-cua-ban.html index.php?controller=carts&action=index
+RewriteRule dang-ki-tai-khoan.html index.php?controller=user&action=register
+RewriteRule dang-nhap.html index.php?controller=user&action=login
+RewriteRule dia-chi.html index.php?controller=user&action=address
